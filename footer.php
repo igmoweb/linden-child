@@ -12,11 +12,7 @@
 
 	<footer class="site-footer" role="contentinfo">
 
-		<h2><?php bloginfo( 'name' ); ?></h2>
-
-		<p><?php echo get_bloginfo( 'description', 'display' ); ?></p>
-		<p><?php echo get_option( 'admin_email' ); ?></p>
-		<p><a href="tel:<?php echo esc_attr( get_option( 'phone_number' ) ); ?>"><?php echo get_option( 'phone_number' ); ?></a></p>
+		<?php do_action( 'linden_child_footer_content' ); ?>
 
 		<?php if ( has_nav_menu( 'social' ) ) : ?>
 			<nav id="social-navigation" class="social-navigation" role="navigation">

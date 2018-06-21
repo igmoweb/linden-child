@@ -261,7 +261,7 @@ body.tax-jetpack-portfolio-type .post-header {
 	pointer-events: none;
 	opacity:0;
 	visibility: hidden;
-	transition: visibility linear 1s;
+	transition: all .2s cubic-bezier(0.39, -0.67, 0.44, 2.48);
 
 }
 
@@ -269,6 +269,8 @@ body.post-type-archive-jetpack-portfolio .post-grid > article:hover .post-header
 body.tax-jetpack-portfolio-type .post-grid > article:hover .post-header {
 	opacity:1;
 	visibility: visible;
+	transform: scale(1.05);
+	z-index: 500;
 }
 
 body.post-type-archive-jetpack-portfolio .post-header h2,
