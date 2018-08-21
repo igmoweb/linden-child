@@ -4,7 +4,7 @@ Description:  Write here a brief description about your child-theme
 Author:       igmoweb
 Author URL:   Write here the author's blog or website url
 Template:     linden-lite
-Version:      1.0
+Version:      1.0.1
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  linden-child
@@ -250,10 +250,10 @@ body.tax-jetpack-portfolio-type .post-grid > article {
 body.post-type-archive-jetpack-portfolio .post-header,
 body.tax-jetpack-portfolio-type .post-header {
 	position: absolute;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
+	top:11px;
+	right:11px;
+	bottom:11px;
+	left:11px;
 	z-index:500;
 	margin-top:0;
 	padding:3rem;
