@@ -36,6 +36,11 @@ function linden_lite_child_body_class( $class ) {
 		if ( ! empty( $types ) ) {
 			$class[] = 'has-terms';
 		}
+
+		$vimeo_url = get_post_meta( get_the_ID(), '_vimeo_link', true );
+		if ( ! empty( $vimeo_url ) ) {
+			$class[] = 'has-vimeo';
+		}
 	}
 
 	return $class;

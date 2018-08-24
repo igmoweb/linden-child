@@ -27,7 +27,7 @@ $vimeo_url = get_post_meta( get_the_ID(), '_vimeo_link', true );
 			<?php if ( ! empty( $vimeo_url ) ): ?>
 				<?php echo wp_oembed_get( $vimeo_url ); ?>
 			<?php elseif ( has_post_thumbnail() ): ?>
-				<?php the_post_thumbnail( 'linden-lite-post-thumb' ); ?>
+				<?php the_post_thumbnail( 'linden-lite-portfolio-thumb' ); ?>
 			<?php endif; ?>
 		</div>
 

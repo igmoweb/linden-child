@@ -26,6 +26,7 @@ function linden_child_theme_init() {
 	add_post_type_support( 'jetpack-portfolio', 'post-formats' );
 	register_taxonomy_for_object_type( 'post_format', 'jetpack-portfolio' );
 	remove_post_type_support( 'post', 'post-formats' );
+	add_image_size( 'linden-lite-portfolio-thumb', 1400, 99999 ); // (cropped)
 }
 
 function linden_lite_child_register_settings() {
